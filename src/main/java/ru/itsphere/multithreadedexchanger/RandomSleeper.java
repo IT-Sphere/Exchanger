@@ -1,8 +1,8 @@
 package ru.itsphere.multithreadedexchanger;
 
 /**
- * Этот класс нужен для остановки потоков на случайный период времени.
- * Задержка может быть от 0 с. до 10 с.
+ * Р­С‚РѕС‚ РєР»Р°СЃСЃ РЅСѓР¶РµРЅ РґР»СЏ РѕСЃС‚Р°РЅРѕРІРєРё РїРѕС‚РѕРєРѕРІ РЅР° СЃР»СѓС‡Р°Р№РЅС‹Р№ РїРµСЂРёРѕРґ РІСЂРµРјРµРЅРё.
+ * Р—Р°РґРµСЂР¶РєР° РјРѕР¶РµС‚ Р±С‹С‚СЊ РѕС‚ 0 СЃ. РґРѕ 2 СЃ.
  * <p>
  * http://it-channel.ru/
  *
@@ -11,7 +11,7 @@ package ru.itsphere.multithreadedexchanger;
 public class RandomSleeper {
 
     public void sleep() throws InterruptedException {
-        Integer millis = (int) (Math.random() * 10000);
+        Integer millis = (int) (Math.random() * 2000);
         System.out.println(millis);
         Thread.sleep(millis);
     }

@@ -3,7 +3,7 @@ package ru.itsphere.multithreadedexchanger;
 import java.util.concurrent.Exchanger;
 
 /**
- * Класс покупатель.
+ * РљР»Р°СЃСЃ РїРѕРєСѓРїР°С‚РµР»СЊ
  * <p>
  * http://it-channel.ru/
  *

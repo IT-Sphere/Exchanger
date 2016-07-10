@@ -4,9 +4,8 @@ import java.util.concurrent.Exchanger;
 
 public class Main {
 
-
     public static void main(String[] args) {
-        Exchanger exchanger = new Exchanger();
+        Exchanger<String> exchanger = new Exchanger();
 
         RandomSleeper sleeper = new RandomSleeper();
         Seller seller = new Seller(exchanger, "iPhone", sleeper);
