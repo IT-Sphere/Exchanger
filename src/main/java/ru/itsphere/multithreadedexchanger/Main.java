@@ -1,11 +1,10 @@
 package ru.itsphere.multithreadedexchanger;
 
-import java.util.concurrent.Exchanger;
-
-public class Main {
+public class
+Main {
 
     public static void main(String[] args) {
-        Exchanger<String> exchanger = new Exchanger();
+        MyExchanger<String> exchanger = new MyExchanger();
 
         RandomSleeper sleeper = new RandomSleeper();
         Seller seller = new Seller(exchanger, "iPhone", sleeper);

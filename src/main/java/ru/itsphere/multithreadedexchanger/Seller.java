@@ -1,6 +1,5 @@
 package ru.itsphere.multithreadedexchanger;
 
-import java.util.concurrent.Exchanger;
 
 /**
  * Класс продавец
@@ -12,11 +11,11 @@ import java.util.concurrent.Exchanger;
 public class Seller extends Thread {
 
     private final RandomSleeper sleepTimeInterval;
-    private final Exchanger<String> exchanger;
+    private final MyExchanger<String> exchanger;
     private String money;
     private String product;
 
-    public Seller(Exchanger<String> exchanger, String product, RandomSleeper sleepTimeInterval) {
+    public Seller(MyExchanger<String> exchanger, String product, RandomSleeper sleepTimeInterval) {
         this.exchanger = exchanger;
         this.product = product;
         this.sleepTimeInterval = sleepTimeInterval;
